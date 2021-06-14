@@ -1,20 +1,22 @@
-import React from "react";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import SiteNavbar from "./components/navbar/navbar";
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { DataProvider } from './GlobalState'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import Main from './components/main/Pages'
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-  render() {
-    return (
-      <>
-        <SiteNavbar />
-        <div className="content">This is a content</div>
-      </>
-    );
-  }
+function App() {
+  return (
+    <DataProvider>
+      <Router>
+        <div className="App">
+          <Header />
+          <Main />
+          <Footer />
+        </div>
+      </Router>
+    </DataProvider>
+  )
 }
-export default App;
+
+export default App
