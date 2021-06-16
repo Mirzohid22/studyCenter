@@ -1,0 +1,8 @@
+@media (max-width: 520px) {
+    .footer_icon{
+        width: 100% !important;
+    }
+    .footer{
+        padding: 2.1rem !important;
+    }
+}
