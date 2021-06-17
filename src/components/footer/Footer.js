@@ -77,6 +77,12 @@ function Footer() {
                                 href="#!"
                                 role="button"
                             ><i className="fab fa-twitter"></i></a>
+                            <a
+                                className="btn btn-primary btn-floating m-1"
+                                style={{ backgroundColor: "#c4302b", borderRadius: '50%' }}
+                                href="#!"
+                                role="button"
+                            ><i className="fab fa-youtube"></i></a>
 
                             <a
                                 className="btn btn-primary btn-floating m-1"
